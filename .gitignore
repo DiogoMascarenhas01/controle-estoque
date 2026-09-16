@@ -6,25 +6,26 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# Ambientes virtuais
+# Virtual environments
 .venv/
 venv/
 env/
 
-# Configuração local e segredos
+# Local configuration and secrets
 .env
 .env.*
 !.env.example
 *.pem
 *.key
 
-# PyInstaller e binários gerados
+# PyInstaller and generated binaries
 build/
 dist/
 *.spec
 *.exe
 
-# Dados e relatórios locais
+# Local data and reports
+INVENTORIES/
 INVENTÁRIOS/
 *.pdf
 *.xlsx
@@ -33,7 +34,7 @@ INVENTÁRIOS/
 *.sqlite*
 *.log
 
-# IDE e sistema operacional
+# IDE and operating-system files
 .vscode/
 .idea/
 .DS_Store

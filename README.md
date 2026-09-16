@@ -1,39 +1,39 @@
-# Controle de Estoque
+# Inventory Management
 
-Aplicação desktop em Python/Tkinter para controle de produtos, movimentações, usuários, inventários e relatórios.
+A Python/Tkinter desktop application for managing products, stock movements, users, inventories, and reports.
 
-## Requisitos
+## Requirements
 
-- Windows 10 ou 11
+- Windows 10 or 11
 - Python 3.14
-- MongoDB local disponível em `mongodb://localhost:27017/`
+- A local MongoDB server available at `mongodb://localhost:27017/`
 
-## Instalação
+## Installation
 
 ```bash
 py -3.14 -m pip install -r requirements.txt
 ```
 
-Inicie o serviço do MongoDB e execute:
+Start the MongoDB service, then run:
 
 ```bash
-py -3.14 gerenciamento_estoque.py
+py -3.14 inventory_management.py
 ```
 
-O banco utilizado pela aplicação é `ControleDeEstoque`.
+The application uses the existing `ControleDeEstoque` database. Its Portuguese collection names, field names, and persisted movement values are intentionally retained for compatibility with existing data. The interface displays movement types as `INBOUND` and `OUTBOUND`.
 
-## Recursos visuais
+## Visual Assets
 
-Mantenha estes arquivos junto ao código principal:
+Keep these files alongside the main Python file:
 
 - `background.png`
 - `logo.png`
 - `icon.png`
 
-## Segurança
+## Security
 
-Esta versão foi desenvolvida para uso local. Antes de disponibilizá-la em rede ou para vários usuários, revise o gerenciamento de contas: o código atual mantém um campo de senha em texto simples no MongoDB para exibição administrativa, além do hash usado na autenticação. Não use credenciais reais ou reutilizadas enquanto esse comportamento não for removido.
+This version was designed for local use. Before making it available over a network or to multiple users, review account management: the current code stores a plaintext password field in MongoDB for administrative display in addition to the hash used for authentication. Do not use real or reused credentials until this behavior is removed.
 
-## Arquivos não versionados
+## Untracked Files
 
-Artefatos do PyInstaller, executáveis, relatórios, inventários, caches, ambientes virtuais e dados locais são excluídos pelo `.gitignore`.
+PyInstaller artifacts, executables, reports, inventories, caches, virtual environments, and local data are excluded by `.gitignore`.
